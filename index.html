@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2-W3-D2</title>
+    <style>
+      form {
+        width: max-content;
+        margin-inline: auto;
+        margin-top: 5rem;
+      }
+
+      form > div {
+        margin-bottom: 1rem;
+      }
+
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul id="names-list"></ul>
+    <form id="form">
+      <div>
+        <label for="name">Nome</label>
+        <input type="text" id="name" required />
+      </div>
+      <button type="submit">Aggiungi</button>
+      <button type="button" class="deleteLast">Cancella ultimo</button>
+      <button type="button" class="form-reset">Cancella Dati</button>
+    </form>
+    <p class="time"></p>
+    <script src="./script.js"></script>
+  </body>
+</html>
