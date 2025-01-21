@@ -7,7 +7,6 @@ for (element of names) {
 form.onsubmit = function (event) {
   event.preventDefault();
   names.push(document.getElementById("name").value);
-  console.log(names);
   localStorage.setItem("names", JSON.stringify(names));
   document.getElementById("names-list").innerHTML = "";
   if (localStorage.getItem("names")) {
