@@ -43,6 +43,7 @@ if (!sessionStorage.getItem("time")) {
   document.querySelector(".time").innerText = 0;
 } else {
   time = parseInt(sessionStorage.getItem("time"));
+  document.querySelector(".time").innerText = sessionStorage.getItem("time");
 }
 setInterval(() => {
   time += 1;
